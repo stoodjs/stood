@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@stood/monorepo",
+    },
+    "packages/config": {
+      "name": "@stood/config",
+      "version": "0.0.0",
+    },
+  },
+  "packages": {
+    "@stood/config": ["@stood/config@workspace:packages/config"],
+  }
+}
