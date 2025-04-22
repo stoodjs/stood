@@ -1,0 +1,21 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"author": {
+		"email": "hunar.roop@gmail.com",
+		"name": "Hunar Roop Kahlon"
+	},
+	"bugs": "https://github.com/stoodjs/stood/issues",
+	"description": "A functional standard library for the web.",
+	"homepage": "https://github.com/stoodjs/stood#readme",
+	"license": "MIT",
+	"name": "@stood/monorepo",
+	"packageManager": "bun@1.2.10",
+	"private": true,
+	"repository": {
+		"directory": ".",
+		"type": "git",
+		"url": "https://github.com/stoodjs/stood.git"
+	},
+	"type": "module",
+	"workspaces": ["apps/*", "packages/*"]
+}
