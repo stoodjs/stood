@@ -10,7 +10,8 @@
 		"@biomejs/biome": "^1.9.4"
 	},
 	"exports": {
-		"./biome": "./biome.json"
+		"./biome": "./biome.json",
+		"./tsconfig": "./tsconfig.json"
 	},
 	"homepage": "https://github.com/stoodjs/stood/tree/main/packages/config#readme",
 	"license": "MIT",
