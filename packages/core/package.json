@@ -1,0 +1,26 @@
+{
+	"$schema": "https://json.schemastore.org/package.json",
+	"author": {
+		"email": "hunar.roop@gmail.com",
+		"name": "Hunar Roop Kahlon"
+	},
+	"bugs": "https://github.com/stoodjs/stood/issues",
+	"description": "Core functionality for the stood packages.",
+	"homepage": "https://github.com/stoodjs/stood/tree/main/packages/core#readme",
+	"imports": {
+		"#*": "./*"
+	},
+	"license": "MIT",
+	"name": "@stood/core",
+	"packageManager": "bun@1.2.10",
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"directory": "packages/core",
+		"type": "git",
+		"url": "https://github.com/stoodjs/stood.git"
+	},
+	"type": "module",
+	"version": "0.0.0"
+}
