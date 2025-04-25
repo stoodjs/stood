@@ -16,6 +16,7 @@
       "version": "0.0.0",
       "devDependencies": {
         "@biomejs/biome": "^1.9.4",
+        "@stood/config": "^0.1.0",
       },
     },
   },
