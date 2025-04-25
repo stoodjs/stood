@@ -6,6 +6,9 @@
 	},
 	"bugs": "https://github.com/stoodjs/stood/issues",
 	"description": "Core functionality for the stood packages.",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4"
+	},
 	"homepage": "https://github.com/stoodjs/stood/tree/main/packages/core#readme",
 	"imports": {
 		"#*": "./*"
@@ -21,6 +24,7 @@
 		"type": "git",
 		"url": "https://github.com/stoodjs/stood.git"
 	},
+	"trustedDependencies": ["@biomejs/biome"],
 	"type": "module",
 	"version": "0.0.0"
 }
