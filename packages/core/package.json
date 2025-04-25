@@ -26,6 +26,7 @@
 		"url": "https://github.com/stoodjs/stood.git"
 	},
 	"scripts": {
+		"format": "biome check --write",
 		"lint": "biome check"
 	},
 	"trustedDependencies": ["@biomejs/biome"],
