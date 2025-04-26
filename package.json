@@ -18,7 +18,8 @@
 	},
 	"scripts": {
 		"format": "bun --filter=\"*\" run format",
-		"lint": "bun --filter=\"*\" run lint"
+		"lint": "bun --filter=\"*\" run lint",
+		"typecheck": "bun --filter=\"*\" run typecheck"
 	},
 	"type": "module",
 	"workspaces": ["apps/*", "packages/*"]
