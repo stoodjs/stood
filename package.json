@@ -17,6 +17,7 @@
 		"url": "https://github.com/stoodjs/stood.git"
 	},
 	"scripts": {
+		"format": "bun --filter=\"*\" run format",
 		"lint": "bun --filter=\"*\" run lint"
 	},
 	"type": "module",
