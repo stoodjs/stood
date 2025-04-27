@@ -32,6 +32,7 @@
 	"scripts": {
 		"format": "biome check --write",
 		"lint": "biome check",
+		"test": "bun test",
 		"typecheck": "tsc"
 	},
 	"trustedDependencies": ["@biomejs/biome"],
