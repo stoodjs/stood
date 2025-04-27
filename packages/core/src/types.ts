@@ -22,6 +22,4 @@
  * }
  * ```
  */
-export interface Is<Type> {
-	(input: unknown): input is Type;
-}
+export type Is<Type> = (input: unknown) => input is Type;
