@@ -19,6 +19,7 @@
 	"scripts": {
 		"format": "bun --filter=\"*\" run format",
 		"lint": "bun --filter=\"*\" run lint",
+		"test": "bun --filter=\"*\" run test",
 		"typecheck": "bun --filter=\"*\" run typecheck"
 	},
 	"type": "module",
