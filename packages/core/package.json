@@ -11,6 +11,9 @@
 		"@stood/config": "^0.1.0",
 		"@types/bun": "^1.2.10"
 	},
+	"exports": {
+		"./bigint": "./src/bigint/index.ts"
+	},
 	"homepage": "https://github.com/stoodjs/stood/tree/main/packages/core#readme",
 	"imports": {
 		"#*": "./*"
