@@ -9,7 +9,7 @@ on:
 
 jobs:
   biome:
-    name: Biome
+    name: Biome @${{ matrix.package }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,12 +22,22 @@ jobs:
       
       - name: Install dependencies
         run: bun install
+      
+      - name: Switch to @${{ matrix.package }} package
+        run: cd ${{ matrix.package }}
       
       - name: Lint
-        run: bun --filter=* x biome ci
+        run: bun biome ci
+    
+    strategy:
+      fail-fast: true
+      matrix:
+        package:
+        - "packages/config"
+        - "packages/core"
   
   test:
-    name: Test
+    name: Test @${{ matrix.package }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,12 +50,21 @@ jobs:
       
       - name: Install dependencies
         run: bun install
+
+      - name: Switch to @${{ matrix.package }} package
+        run: cd ${{ matrix.package }}
 
       - name: Test
-        run: bun run test
+        run: bun test
+    
+    strategy:
+      fail-fast: true
+      matrix:
+        package:
+        - "packages/core"
 
   typecheck:
-    name: Typecheck
+    name: Typecheck @${{ matrix.package }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -58,6 +77,15 @@ jobs:
       
       - name: Install dependencies
         run: bun install
+      
+      - name: Switch to @${{ matrix.package }} package
+        run: cd ${{ matrix.package }}
 
       - name: Typecheck
-        run: bun run typecheck
+        run: bun typecheck
+
+    strategy:
+      fail-fast: true
+      matrix:
+        package:
+        - "packages/core"
