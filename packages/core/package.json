@@ -12,7 +12,8 @@
 		"@types/bun": "^1.2.10"
 	},
 	"exports": {
-		"./bigint": "./src/bigint/index.ts"
+		"./bigint": "./src/bigint/index.ts",
+		"./boolean": "./src/boolean/index.ts"
 	},
 	"homepage": "https://github.com/stoodjs/stood/tree/main/packages/core#readme",
 	"imports": {
